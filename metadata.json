@@ -1,0 +1,6 @@
+
+{
+  "name": "Trotech Pvt Ltd Enterprise Platform",
+  "description": "A high-end business website and role-based portal system for Trotech Pvt Ltd, featuring Admin, Client, and Developer dashboards with real-time project management and SEO optimization.",
+  "requestFramePermissions": ["camera", "microphone"]
+}
