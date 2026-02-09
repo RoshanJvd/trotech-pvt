@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trotech Pvt Ltd | Innovative Technology Solutions</title>
+    <meta name="description" content="Trotech Pvt Ltd provides premium technology solutions including web development, mobile apps, and enterprise engineering for global businesses.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <style>
         * {
             cursor: none !important;
@@ -17,17 +18,16 @@
             font-family: 'Inter', sans-serif; 
             overflow-x: hidden;
             background-color: #ffffff;
+            color: #1a1a1a;
         }
         .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); }
         .scrollbar-hide::-webkit-scrollbar { display: none; }
         .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
         
-        /* Global Smooth Transitions */
         a, button, input, select, textarea, div, span, section {
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        /* 360 Degree Logo Rotation */
         .logo-container:hover .logo-icon-box {
             transform: rotate(360deg);
         }
@@ -35,7 +35,16 @@
             transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
         }
 
-        /* Custom Cursor Design */
+        /* 3D Logo Optimization */
+        .premium-logo {
+            filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
+            transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .premium-logo:hover {
+            transform: scale(1.1) translateY(-2px);
+            filter: drop-shadow(0 15px 25px rgba(83, 0, 0, 0.2));
+        }
+
         #cursor-dot {
             width: 8px;
             height: 8px;
@@ -94,13 +103,11 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
 <body class="bg-white text-brand-dark">
     <div id="cursor-dot"></div>
     <div id="cursor-outline"></div>
     <div id="root"></div>
-    <!-- Vite handles the entry point -->
     <script type="module" src="/index.tsx"></script>
     <script>
         const dot = document.getElementById('cursor-dot');
