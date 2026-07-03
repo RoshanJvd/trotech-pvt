@@ -87,7 +87,7 @@ const App: React.FC = () => {
   // Updated to use the new logo image file
   const [siteSettings, setSiteSettings] = useState<SiteSettings>(() => getStoredData('trotech_settings', {
     logoText: 'TROTECH',
-    logoUrl: '/assets/trotech-logo.png', // Updated to reference the image file
+    logoUrl: '/assets/trotech-logo.png.png', // Updated to reference the image file
     heroTitle: 'Innovative Technology Solutions for Modern Businesses',
     heroSubtitle: 'We empower startups and enterprises with high performance digital solutions. Our team crafts bespoke software that drives growth and operational efficiency.',
     accentColor: '#530000',
